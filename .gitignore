@@ -1,0 +1,8 @@
+/.gulp
+/node_modules
+.DS_Store
+/images/.tinypng-sigs
+/.sass-cache
+/.htmlcache
+.sass-cache
+/css/style.css.map

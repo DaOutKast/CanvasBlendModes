@@ -1,0 +1,4 @@
+Title: Canvas Blend Modes
+Description: Paint using your browser or insert images and add blend modes to them as you would in Adobe Photoshop
+Author: Ruhjaan Cupido
+Email: ruhjaanc@gmail.com

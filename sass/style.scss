@@ -1,0 +1,121 @@
+$gradColor1RGBa: rgba(random(255), random(255), random(255), 0.5);
+$gradColor2RGBa: rgba(random(255), random(255), random(255), 0.5);
+$gradColor3RGBa: rgba(random(255), random(255), random(255), 0.5);
+
+html, body {
+  margin:0;
+}
+#colorPicker {
+  box-shadow: -5px 5px 5px $gradColor1RGBa*1;
+}
+#rWidth {
+  box-shadow: -5px 5px 5px $gradColor1RGBa*1;
+}
+#rHeight {
+  box-shadow: -5px 5px 5px $gradColor1RGBa*1;
+}
+#strokeSelector {
+  box-shadow: -5px 5px 5px $gradColor2RGBa*1;
+}
+#blendSelector {
+  box-shadow: -5px 5px 5px $gradColor2RGBa*1;
+}
+#joinSelector {
+  box-shadow: -5px 5px 5px $gradColor3RGBa*1;
+}
+#capSelector {
+  box-shadow: -5px 5px 5px $gradColor3RGBa*1;
+}
+#canvas {
+  margin: 0 auto;
+  border: 1px solid #999;
+}
+
+.rdimensions {
+  display: none !important;
+}
+.colorMode {
+  input {
+    -webkit-appearance: radio !important;
+  }
+  #b, #ss, #s {
+    text-shadow: -3px 3px 1px $gradColor1RGBa;
+  }
+}
+
+#canvasContainer, #draw {
+  position: relative;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background: linear-gradient(145deg, $gradColor1RGBa, $gradColor2RGBa, $gradColor3RGBa);
+
+  &__settings {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 280px;
+    max-width: 920px;
+
+    &--item {
+      display: table-cell;
+
+      input, select {
+        margin: 5px;
+        border-radius: 5px;
+        vertical-align: middle;
+        height: 24px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #999;
+        letter-spacing: 2px;
+        text-shadow: -1px 1px 2px #999;
+        background-color: #eee;
+        border: 0;
+        padding: 0;
+        outline: none;
+
+        &:hover {
+          box-shadow: 0 0 7px 3px #fff,
+                      0 0 7px 2px #000;
+          background: linear-gradient(145deg, $gradColor1RGBa, $gradColor2RGBa, $gradColor3RGBa);
+          background-color: #bbb;
+          color: #fff;
+        }
+      }
+
+      section {
+        .main-img {
+          width:100%;
+          max-width:1080px;
+          height:100%;
+        }
+        .blend-img {
+          @extend .main-img;
+          // position:absolute;
+          top:80px;
+          left:20px;
+        }
+      }
+
+      label {
+        margin: 0;
+        color: #000;
+        color: #fff;
+        font-size: 25px;
+        padding: 0;
+      }
+
+      p {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+        text-shadow: -1px 1px 0 #fff,
+                     -2px 2px 0 #999;
+      }
+    }
+  }
+}

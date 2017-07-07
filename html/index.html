@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="../css/style.css">
+ <title>Document</title>
+</head>
+<body>
+ <div id="canvasContainer"></div>
+  <main class="wrapper">
+   <header>
+
+   </header>
+   <section class="wrapper__settings">
+
+    <article class="wrapper__settings--item">
+     <input type="file" name="img1" id="mainImg" title="Select Main Image">
+     <p>Insert Main Image</p>
+     <section id="preview1"></section>
+    </article>
+
+    <!-- <article class="wrapper__settings--item">
+     <input type="file" name="img2" id="blendImg" title="Select Blend Image">
+     <p>Insert Blend Image</p>
+     <section id="preview2"></section>
+    </article> -->
+
+    <article class="wrapper__settings--item">
+     <!-- <input type="button" name="download" id="download" title="Download Image"> -->
+     <button type="button" name="button">Download Image</button>
+     <!-- <a id="download">Download Image</a> -->
+    </article>
+
+    <article class="wrapper__settings--item">
+     <select id="blendSelector" title="Blend Modes">
+      <option value="normal">Normal</option>
+      <option value="lighter">Lighter</option>
+      <option value="xor">Xor</option>
+      <option value="multiply">Multiply</option>
+      <option value="screen">Screen</option>
+      <option value="overlay">Overlay</option>
+      <option value="lighten">Lighten</option>
+      <option value="darken">Darken</option>
+      <option value="color-dodge">Color-dodge</option>
+      <option value="color-burn">Color-burn</option>
+      <option value="difference">Difference</option>
+      <option value="hue">Hue</option>
+     </select>
+     <p id="selectedBlend">Blend mode</p>
+    </article>
+
+   </section>
+  </main>
+
+ <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
